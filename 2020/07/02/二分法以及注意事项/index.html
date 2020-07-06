@@ -5,13 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>二分法以及注意事项 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="二分法注意事项   求中点要防溢出 12mid &#x3D; left+(right-left) &#x2F;&#x2F; 2 或者 mid &#x3D; (right+left) &gt;&gt; 1 (最佳选择)   原因: mid &#x3D; (left+right)&#x2F;2 当right非常大的时候，可能超出整数型的界限。 mid &#x3D; left+(right-left) &#x2F;&#x2F; 2 当right非常大，且left为负数的时候，也可能超出整数型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二分法以及注意事项">
+<meta property="og:url" content="http://yoursite.com/2020/07/02/%E4%BA%8C%E5%88%86%E6%B3%95%E4%BB%A5%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="二分法注意事项   求中点要防溢出 12mid &#x3D; left+(right-left) &#x2F;&#x2F; 2 或者 mid &#x3D; (right+left) &gt;&gt; 1 (最佳选择)   原因: mid &#x3D; (left+right)&#x2F;2 当right非常大的时候，可能超出整数型的界限。 mid &#x3D; left+(right-left) &#x2F;&#x2F; 2 当right非常大，且left为负数的时候，也可能超出整数型">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-07-02T08:05:35.883Z">
+<meta property="article:modified_time" content="2020-07-02T08:05:35.884Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -66,9 +70,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-二分法以及注意事项" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-二分法以及注意事项" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/02/%E4%BA%8C%E5%88%86%E6%B3%95%E4%BB%A5%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="article-date">
   <time datetime="2020-07-02T08:05:35.883Z" itemprop="datePublished">2020-07-02</time>
@@ -81,8 +83,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/02/%E4%BA%8C%E5%88%86%E6%B3%95%E4%BB%A5%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">二分法以及注意事项</a>
+    <h1 class="article-title" itemprop="name">
+      二分法以及注意事项
     </h1>
   
 
@@ -145,108 +147,19 @@ mid = (right+left) &gt;&gt; 1 (无符号右移)的时候,即使超出了界限�
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-python笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/27/python%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2020-06-27T12:34:36.000Z" itemprop="datePublished">2020-06-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/27/python%E7%AC%94%E8%AE%B0/">python笔记</a>
-    </h1>
+    <a href="/2020/06/27/python%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">python笔记</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Python为False的情况</p>
-<ul>
-<li><p>整数值0、浮点数值0.0等、空字符串都为假</p>
-</li>
-<li><p>None为假</p>
-</li>
-<li><p>空数据对象都是假，比如[]、{}、()等</p>
-</li>
-<li><p>注意，元组的括号和逗号的特殊性。例如(())、(None)、(1)这些都不是元组，而是单个数据对象，加上逗号才算是元组。所以，使用括号包围但却不是元组的数据，如果它们是假，则整个返回假，而不是元组看上去不为空而返回真</p>
-<hr>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/27/python%E7%AC%94%E8%AE%B0/" data-id="ckc9ucjgy0000pg78f4m20ksy" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/27/hello-world/" class="article-date">
-  <time datetime="2020-06-27T12:22:48.028Z" itemprop="datePublished">2020-06-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/27/hello-world/" data-id="ckc9ucjj10002pg78dqgh58k6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
