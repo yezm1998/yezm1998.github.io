@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-07-02T08:05:35.884Z</updated>
+  <updated>2020-07-07T06:18:06.026Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>steamVR</title>
+    <link href="/2020/07/07/steamVR/"/>
+    <id>/2020/07/07/steamVR/</id>
+    <published>2020-07-07T06:18:05.000Z</published>
+    <updated>2020-07-07T06:18:06.026Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title></title>
